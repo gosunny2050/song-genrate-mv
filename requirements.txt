@@ -1,0 +1,22 @@
+# 核心库
+langchain==0.0.346
+openai==0.27.8
+python-dotenv==1.0.0  # 用于管理API密钥
+
+# 音频处理
+whisper==1.1.6  # 语音转文本
+gTTS==2.3.2     # 文本转语音
+pydub==0.25.1   # 音频格式处理（需ffmpeg）
+
+# 图片生成
+diffusers==0.19.3
+transformers==4.31.0
+torch==2.0.1    # 根据CUDA版本选择，可选torch-cpu
+
+# 视频合成
+moviepy==1.0.3
+imageio==2.31.1
+imageio-ffmpeg==0.4.8  # moviepy的ffmpeg依赖
+
+# 可选工具
+replicate==0.11.1  # 如果使用云API替代本地模型

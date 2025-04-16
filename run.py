@@ -18,15 +18,3 @@ agent = initialize_agent(
 # 执行任务
 result = agent.run("为音频love_song.mp3生成MV配图视频")
 print(f"生成的MV路径: {result}")
-
-tools = [audio_tool, image_tool, video_tool]
-agent = initialize_agent(
-    tools,
-    OpenAI(temperature=0.7, model="gpt-4"),
-    agent="structured-chat-zero-shot-react-description",
-    verbose=True
-)
-
-# 执行任务
-result = agent.run("为音频love_song.mp3生成MV配图视频")
-print(f"生成的MV路径: {result}")
